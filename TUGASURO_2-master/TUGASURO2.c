@@ -2,7 +2,7 @@
  * TUGASURO2.c
  *
  *  Created on: Jan 11, 2020
- *      Author: KELOMPOK URO AUDRIC, REHAGANA
+ *      Author: KELOMPOK URO AUDRIC OKTAVIO (16019301), REHAGANA (16519380), LUCIA ENO NOVOTNA (16019409)
  */
 
 #include <stdio.h>
@@ -23,8 +23,8 @@ int main() {
         	printf("koefisien dari pangkat ke %d= ", i);
         	scanf("%d", &angka[i]);
         }
-     
-     for(i=0; i <= p; i=i+1)
+
+        for(i=0; i <= p; i=i+1)
         {
         	angka[i] = i * angka[i];
         	o = i - 1;
@@ -35,6 +35,24 @@ int main() {
         	    printf(" %dx^%d", angka[i], o);
         	}
         }
+    }
+
+    else {
+    	printf("Enter two operands: \n");
+    	scanf("%lf %lf", &first, &second);
+
+    	if(operator == '+') {
+    		printf("%.1lf + %.1lf = %.1lf", first, second, first + second);
+    	}
+    	else if (operator == '-') {
+    		printf("%.1lf - %.1lf = %.1lf", first, second, first - second);
+    	}
+    	else if (operator == '*') {
+    		printf("%.1lf * %.1lf = %.1lf", first, second, first * second);
+    	}
+    	else {
+    	    printf("nothingness");
+    	}
     }
     return 0;
 }
